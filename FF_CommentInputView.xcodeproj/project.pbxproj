@@ -13,6 +13,8 @@
 		18CB97AE1FA95D5700F75B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CB97AD1FA95D5700F75B68 /* Assets.xcassets */; };
 		18CB97B11FA95D5700F75B68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CB97AF1FA95D5700F75B68 /* LaunchScreen.storyboard */; };
 		18CB97B41FA95D5700F75B68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB97B31FA95D5700F75B68 /* main.m */; };
+		18CB97BC1FA95D7500F75B68 /* ChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB97BA1FA95D7400F75B68 /* ChatInputView.m */; };
+		6DA71DFDC042F46BF182FF1B /* libPods-FF_CommentInputView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DEF2BC4C79C1345D6A295E /* libPods-FF_CommentInputView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		18CB97B01FA95D5700F75B68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CB97B21FA95D5700F75B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CB97B31FA95D5700F75B68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18CB97BA1FA95D7400F75B68 /* ChatInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatInputView.m; sourceTree = "<group>"; };
+		18CB97BB1FA95D7500F75B68 /* ChatInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatInputView.h; sourceTree = "<group>"; };
+		23BD60BE9C9AD9502FF78A7B /* Pods-FF_CommentInputView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_CommentInputView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_CommentInputView/Pods-FF_CommentInputView.release.xcconfig"; sourceTree = "<group>"; };
+		41DEF2BC4C79C1345D6A295E /* libPods-FF_CommentInputView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_CommentInputView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6A32D370758B132544CB05 /* Pods-FF_CommentInputView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_CommentInputView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_CommentInputView/Pods-FF_CommentInputView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DA71DFDC042F46BF182FF1B /* libPods-FF_CommentInputView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				18CB97A31FA95D5700F75B68 /* FF_CommentInputView */,
 				18CB97A21FA95D5700F75B68 /* Products */,
+				AF62FACBDAE0CC93873117E6 /* Pods */,
+				7D23DF9993A71FBA1C4E6365 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,8 @@
 		18CB97A31FA95D5700F75B68 /* FF_CommentInputView */ = {
 			isa = PBXGroup;
 			children = (
+				18CB97BB1FA95D7500F75B68 /* ChatInputView.h */,
+				18CB97BA1FA95D7400F75B68 /* ChatInputView.m */,
 				18CB97A41FA95D5700F75B68 /* AppDelegate.h */,
 				18CB97A51FA95D5700F75B68 /* AppDelegate.m */,
 				18CB97A71FA95D5700F75B68 /* ViewController.h */,
@@ -71,6 +83,23 @@
 			path = FF_CommentInputView;
 			sourceTree = "<group>";
 		};
+		7D23DF9993A71FBA1C4E6365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41DEF2BC4C79C1345D6A295E /* libPods-FF_CommentInputView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF62FACBDAE0CC93873117E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE6A32D370758B132544CB05 /* Pods-FF_CommentInputView.debug.xcconfig */,
+				23BD60BE9C9AD9502FF78A7B /* Pods-FF_CommentInputView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CB97B71FA95D5700F75B68 /* Build configuration list for PBXNativeTarget "FF_CommentInputView" */;
 			buildPhases = (
+				66EE483AC22C6F14AA8C363C /* [CP] Check Pods Manifest.lock */,
 				18CB979D1FA95D5700F75B68 /* Sources */,
 				18CB979E1FA95D5700F75B68 /* Frameworks */,
 				18CB979F1FA95D5700F75B68 /* Resources */,
+				ABF476BFA0A6D1D1D283FF92 /* [CP] Embed Pods Frameworks */,
+				DEC9BC32275C50001DC35263 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +169,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66EE483AC22C6F14AA8C363C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_CommentInputView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF476BFA0A6D1D1D283FF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_CommentInputView/Pods-FF_CommentInputView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC9BC32275C50001DC35263 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_CommentInputView/Pods-FF_CommentInputView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18CB979D1FA95D5700F75B68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18CB97A91FA95D5700F75B68 /* ViewController.m in Sources */,
+				18CB97BC1FA95D7500F75B68 /* ChatInputView.m in Sources */,
 				18CB97B41FA95D5700F75B68 /* main.m in Sources */,
 				18CB97A61FA95D5700F75B68 /* AppDelegate.m in Sources */,
 			);
@@ -276,9 +360,11 @@
 		};
 		18CB97B81FA95D5700F75B68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6A32D370758B132544CB05 /* Pods-FF_CommentInputView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKN2F9FLER;
 				INFOPLIST_FILE = FF_CommentInputView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fanxiaobin.FF-CommentInputView";
@@ -289,9 +375,11 @@
 		};
 		18CB97B91FA95D5700F75B68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BD60BE9C9AD9502FF78A7B /* Pods-FF_CommentInputView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKN2F9FLER;
 				INFOPLIST_FILE = FF_CommentInputView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fanxiaobin.FF-CommentInputView";
